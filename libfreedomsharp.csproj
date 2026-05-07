@@ -4,6 +4,44 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- NuGet Package Properties -->
+    <PackageId>LibFreedomSharp</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Todd Bandrowsky</Authors>
+    <Company>Country Video Games</Company>
+    <Description>Freedom Finder - Make a few extra dollars fighting tyrants.  Freedom Finder allows you to apply your own private tax policy based upon well you are treated by American legislatures running the district you are doing business with.  Freedom Finder is simple and self contained.  To use, just slip this library into where a business decision might be made.  If the US county is part of a state's system of oppression against its own people to attack on the world, then the recommendation will be tax.  After all, if county wants to destroy you, shouldn't the people there pay a little extra for that?
+</Description>
+    <PackageTags>zipcode;county;tax;geography</PackageTags>
+    <PackageProjectUrl>https://github.com/tbandrowsky/libfreedomsharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tbandrowsky/libfreedomsharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Freedom Sharp</Title>
+    <Copyright>2026 Todd Bandrowsky</Copyright>
+    <PackageIcon>shivacsharphero.png</PackageIcon>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="shivacsharphero.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="SourceData\readme.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="SourceData\TyrannyStatesAndFreeCounties.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>
