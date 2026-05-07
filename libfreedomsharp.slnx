@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../libfreedomtest/libfreedomtest.csproj" />
+  <Project Path="libfreedomsharp.csproj" />
+</Solution>
